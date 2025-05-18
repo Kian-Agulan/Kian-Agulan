@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reebok - StepUp Shoes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .hero-reebok {
+      background: url('https://images.unsplash.com/photo-1616401783064-3fa0b5e4b264') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-reebok h2 {
+      font-size: 48px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+    }
+    .product-card p {
+      color: #333;
+    }
+    .price {
+      color: #cc0000;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SNKRS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero-reebok">
+    <h2>REEBOK – Sport the Heritage. Own the Future.</h2>
+  </div>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="d:\DL PICS\ab519499e7f7f1017bdbe6244e9e4f9b.jpg" alt="Reebok Classic Leather">
+      <h3>Reebok Classic Leather</h3>
+      <p class="price">$79.99</p>
+      <p>Timeless style with everyday comfort and a clean silhouette.</p>
+    </div>
+    <div class="product-card">
+      <img src="d:\DL PICS\def23109fec7971da2d30c64694617c6.jpg" alt="Reebok Zig Kinetica">
+      <h3>Reebok Zig Kinetica</h3>
+      <p class="price">$109.99</p>
+      <p>Energy-return tech meets bold design and serious cushioning.</p>
+    </div>
+    <div class="product-card">
+      <img src="d:\DL PICS\80193ec08f822a0977dc15225670fa34.jpg" alt="Reebok Nano X2">
+      <h3>Reebok Nano X2</h3>
+      <p class="price">$119.99</p>
+      <p>The ultimate training shoe for performance-driven athletes.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 StepUp Shoes. All rights reserved.
+  </footer>
+
+</body>
+</html>

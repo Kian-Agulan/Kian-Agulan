@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Puma - StepUp Shoes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .hero-puma {
+      background: url('https://images.unsplash.com/photo-1634219559335-5a6762aa02ed') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-puma h2 {
+      font-size: 48px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+    .product-card h3 {
+      margin: 10px 0;
+    }
+    .product-card p {
+      color: #333;
+    }
+    .price {
+      color: #f57c00;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SNKRS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero-puma">
+    <h2>PUMA COLLECTION – Forever Faster</h2>
+  </div>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="d:\DL PICS\ce2a01e3a0563f28083a4eaa149b056d.jpg" alt="Puma RS-X">
+      <h3>Puma RS-X</h3>
+      <p class="price">$94.99</p>
+      <p>Chunky design with retro vibes and modern comfort.</p>
+    </div>
+    <div class="product-card">
+      <img src="d:\DL PICS\d1df933178e81ee0359a06008c4b5b74.jpg" alt="Puma Future Rider">
+      <h3>Puma Future Rider</h3>
+      <p class="price">$74.99</p>
+      <p>Bold colors and heritage style for the modern street look.</p>
+    </div>
+    <div class="product-card">
+      <img src="d:\DL PICS\c82ef35b81e7545b4e3509704ed72097.jpg" alt="Puma Cali Star">
+      <h3>Puma Cali Star</h3>
+      <p class="price">$84.99</p>
+      <p>Sleek leather sneakers with west coast flair.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 StepUp Shoes. All rights reserved.
+  </footer>
+
+</body>
+</html>

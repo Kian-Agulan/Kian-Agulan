@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Cart - SNKRS</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      height: 80px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .item-info {
+      flex-grow: 1;
+    }
+
+    .item-name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .item-price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .total {
+      text-align: right;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin: 30px auto 0;
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+      background-color: #c2185b;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SNKRS</h1>
+    <nav>
+      <a href="index.html" style="color:white;text-decoration:none;">Home</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Your Shopping Cart</h2>
+
+    <!-- Sample item -->
+    <div class="cart-item">
+      <img src="https://images.unsplash.com/photo-1606813903368-1c3f51a86e9b" alt="Running Shoes">
+      <div class="item-info">
+        <div class="item-name">Running Shoes</div>
+        <div class="item-price">$89.99</div>
+      </div>
+      <button onclick="removeItem(this)">🗑</button>
+    </div>
+
+    <div class="total">Total: $89.99</div>
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+
+  <footer>
+    &copy; 2025 StepUp Shoes. All rights reserved.
+  </footer>
+
+  <script>
+    function removeItem(btn) {
+      const item = btn.closest('.cart-item');
+      item.remove();
+      // You can add logic to update total here
+      document.querySelector('.total').textContent = 'Total: $0.00';
+    }
+  </script>
+
+</body>
+</html>
